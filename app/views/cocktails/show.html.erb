@@ -1,2 +1,6 @@
 
-<h1>Cocktails</h1>
+<h1><%= @cocktail.name %></h1>
+<p><%= link_to "Would you like to delete this cocktail?", cocktail_path, method: :delete, data: { confirm: "Are you sure about that?"} %></p>
+<p><%= link_to "Back to Cocktails", cocktails_path %></p>
+<p><%= link_to "New dose", new_cocktail_dose_path(@cocktail) %></p>
+
